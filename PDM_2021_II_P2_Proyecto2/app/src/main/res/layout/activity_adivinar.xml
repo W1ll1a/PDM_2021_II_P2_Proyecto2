@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_game"
+    tools:context=".AdivinarActivity">
+
+    <ImageView
+        android:id="@+id/ImHead"
+        android:layout_width="279dp"
+        android:layout_height="247dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="69dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/hangman1" />
+
+    <ImageView
+        android:id="@+id/ImNeck"
+        android:layout_width="279dp"
+        android:layout_height="247dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="69dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/hangman2" />
+
+    <ImageView
+        android:id="@+id/ImBody"
+        android:layout_width="279dp"
+        android:layout_height="247dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="69dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/hangman3" />
+
+
+    <ImageView
+        android:id="@+id/ImLegs"
+        android:layout_width="279dp"
+        android:layout_height="247dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="69dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/hangman4" />
+
+    <ImageView
+        android:id="@+id/ImLeftArm"
+        android:layout_width="279dp"
+        android:layout_height="247dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="69dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/hangman5" />
+
+    <TextView
+        android:id="@+id/txvPalabraGame"
+        android:layout_width="266dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="329dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/txtLetra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="292dp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txvPistaDePalabra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="102dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnPrueba"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="220dp"
+        android:text="Comprobar Palabra"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txvLetra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="302dp"
+        android:text="Ingrese una letra"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txvPistaEnJuego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="24dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="29dp"
+        android:text="La pista es: " />
+</RelativeLayout>
